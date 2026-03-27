@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "TKB (Flutter Debug)",
+            "request": "launch",
+            "type": "dart",
+            "preLaunchTask": "Ensure Emulator"
+        },
+        {
+            "name": "Auto Run Script (No Debug)",
+            "type": "pwa-node",
+            "request": "launch",
+            "preLaunchTask": "0. Auto: Start Emulator & Run",
+            "runtimeExecutable": "powershell",
+            "runtimeArgs": ["-Command", "Write-Output 'Running automated script...'"]
+        }
+    ]
+}

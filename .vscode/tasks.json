@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Ensure Emulator",
+            "type": "shell",
+            "command": "powershell -ExecutionPolicy Bypass -File .\\scripts\\ensure_emulator.ps1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "0. Auto: Start Emulator & Run",
+            "type": "shell",
+            "command": "powershell -ExecutionPolicy Bypass -File .\\run_app.ps1",
+            "group": "test"
+        }
+    ]
+}
